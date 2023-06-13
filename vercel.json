@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "openlayers-test-backend",
+  "builds": [
+    {
+      "src": "script.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ]
+}
