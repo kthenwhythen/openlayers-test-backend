@@ -1,6 +1,6 @@
 const WebSocketServer = require('ws');
 
-const wss = new WebSocketServer.Server({ port: 4300 });
+const wss = new WebSocketServer.Server({ port: process.env['PORT'] ?? 4300 });
 const units = [
   {
     id: '4035234',
